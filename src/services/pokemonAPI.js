@@ -1,4 +1,4 @@
-function fetchPokemon(name) {
+export default function fetchPokemon(name) {
     return (
         fetch(`https://pokeapi.co/api/v2/pokemon/${name}`).then(res => {
                 if (res.ok) {
@@ -10,4 +10,3 @@ function fetchPokemon(name) {
     )
 };
 
-export default { fetchPokemon };
